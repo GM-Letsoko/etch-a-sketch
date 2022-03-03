@@ -17,6 +17,7 @@ for(i = 0; i < rows * columns; i++) {
 
 const etch = $$('.etch-a-sketch');
 const reset = $('#reset');
+const grey = $('#grey');
 const black = $('#black');
 const colors = $('#colors');
 
@@ -33,6 +34,12 @@ etch.forEach(etch => {
 	reset.addEventListener('click', (e) => {
 		etch.style.width = 0;
 		etch.style.height = 0;
+	});
+
+	grey.addEventListener('click', (e) => {
+		etch.addEventListener('mouseover', (e) => {
+			etch.style.backgroundColor = 'grey';
+		});
 	});
 
 	black.addEventListener('click', (e) => {
