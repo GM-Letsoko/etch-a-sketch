@@ -10,12 +10,11 @@ button {
 #container {
 	width: 514px;
 	height: 514px;
+	display: grid;
 	margin: 0 auto auto 20px;
 	border: 0.1px solid black;
 }
 
 .etch-a-sketch {
 	border: 0.1px solid gray;
-	height: 25px;
-	width: 25px;
 }
